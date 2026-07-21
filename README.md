@@ -10,7 +10,7 @@ Repositório dedicado aos exercícios práticos desenvolvidos durante os módulo
 ## 🗂️ Estrutura do Repositório
 
 ```text
-meu-projeto/
+mjsoweb/stackblitz-exercicios-fixacao-maria/
 ├── programacao_estruturada/
 │   ├── conversores.js
 │   └── app.js
