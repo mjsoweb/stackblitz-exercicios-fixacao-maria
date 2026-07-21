@@ -1,4 +1,4 @@
-// projeto/Pessoa.js
+// encapsulamento_condicionais_heranca/Pessoa.js
 
 class Pessoa {
     #nome;
@@ -7,6 +7,11 @@ class Pessoa {
     constructor() {
         this.#nome = "";
         this.#email = "";
+    }
+
+    // Getters e Setters para Nome
+    getNome() {
+        return this.#nome;
     }
 
     setNome(nome) {
@@ -18,21 +23,18 @@ class Pessoa {
         return false;
     }
 
-    getNome() {
-        return this.#nome;
+    // Getters e Setters para Email (Com Desafio Extra 1: validação do '@')
+    getEmail() {
+        return this.#email;
     }
 
     setEmail(email) {
-        // Verifica se o e-mail não está vazio E se contém o caractere '@' (Desafio Extra 1)
+        // Verifica se não está vazio E se contém o caractere '@'
         if (email && email.trim() !== "" && email.includes("@")) {
             this.#email = email;
             return true;
         }
         return false;
-    }
-
-    getEmail() {
-        return this.#email;
     }
 }
 
